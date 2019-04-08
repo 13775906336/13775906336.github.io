@@ -106,13 +106,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="使用element-ui组件 实现下拉选择树形图 使用方法123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990">
+<meta property="og:type" content="article">
+<meta property="og:title" content="selector-tree">
+<meta property="og:url" content="http://yoursite.com/2019/04/08/selector-tree/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="使用element-ui组件 实现下拉选择树形图 使用方法123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-08T03:49:58.200Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="selector-tree">
+<meta name="twitter:description" content="使用element-ui组件 实现下拉选择树形图 使用方法123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990">
 
 
 
@@ -169,13 +173,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/08/selector-tree/">
 
 
 
 
 
-  <title>Hexo</title>
+  <title>selector-tree | Hexo</title>
   
 
 
@@ -203,8 +207,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><nav class="site-nav">
   
@@ -296,9 +299,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -334,9 +337,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/08/selector-tree/" itemprop="url">selector-tree</a></h1>
+          <h1 class="post-title" itemprop="name headline">selector-tree</h1>
         
 
         <div class="post-meta">
@@ -412,170 +413,35 @@
       
 
       
-        
-          
-            <p>使用element-ui组件 实现下拉选择树形图</p>
+        <p>使用element-ui组件 实现下拉选择树形图</p>
 <p>使用方法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div class=<span class="string">"main"</span>&gt;</span><br><span class="line">    &lt;selector-tree ref=<span class="string">"selectTree2"</span> @dataChangee=<span class="string">"dataChange"</span> @change=<span class="string">"clickTree"</span></span><br><span class="line">      :res=<span class="string">"value2"</span> :treeList=<span class="string">"data"</span>&gt;</span><br><span class="line">      &lt;/selector-tree&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  import selectorTree from <span class="string">'./selector-tree.vue'</span></span><br><span class="line">  <span class="built_in">export</span> default &#123;</span><br><span class="line">    name: <span class="string">'HelloWorld'</span>,</span><br><span class="line">    <span class="function"><span class="title">data</span></span>() &#123;</span><br><span class="line">      <span class="built_in">return</span> &#123;</span><br><span class="line">        options: [&#123;</span><br><span class="line">          value: <span class="string">'选项1'</span>,</span><br><span class="line">          label: <span class="string">'黄金糕'</span></span><br><span class="line">        &#125;, &#123;</span><br><span class="line">          value: <span class="string">'选项2'</span>,</span><br><span class="line">          label: <span class="string">'双皮奶'</span></span><br><span class="line">        &#125;, &#123;</span><br><span class="line">          value: <span class="string">'选项3'</span>,</span><br><span class="line">          label: <span class="string">'蚵仔煎'</span></span><br><span class="line">        &#125;, &#123;</span><br><span class="line">          value: <span class="string">'选项4'</span>,</span><br><span class="line">          label: <span class="string">'龙须面'</span></span><br><span class="line">        &#125;, &#123;</span><br><span class="line">          value: <span class="string">'选项5'</span>,</span><br><span class="line">          label: <span class="string">'北京烤鸭'</span></span><br><span class="line">        &#125;],</span><br><span class="line">        value: <span class="string">""</span>,</span><br><span class="line">        data: [&#123;</span><br><span class="line">          label: <span class="string">'一级 1'</span>,</span><br><span class="line">          children: [&#123;</span><br><span class="line">            label: <span class="string">'二级 1-1'</span>,</span><br><span class="line">            children: [&#123;</span><br><span class="line">              label: <span class="string">'三级 1-1-1'</span></span><br><span class="line">            &#125;]</span><br><span class="line">          &#125;]</span><br><span class="line">        &#125;, &#123;</span><br><span class="line">          label: <span class="string">'一级 2'</span>,</span><br><span class="line">          children: [&#123;</span><br><span class="line">            label: <span class="string">'二级 2-1'</span>,</span><br><span class="line">            children: [&#123;</span><br><span class="line">              label: <span class="string">'三级 2-1-1'</span></span><br><span class="line">            &#125;]</span><br><span class="line">          &#125;, &#123;</span><br><span class="line">            label: <span class="string">'二级 2-2'</span>,</span><br><span class="line">            children: [&#123;</span><br><span class="line">              label: <span class="string">'三级 2-2-1'</span></span><br><span class="line">            &#125;]</span><br><span class="line">          &#125;]</span><br><span class="line">        &#125;, &#123;</span><br><span class="line">          label: <span class="string">'一级 3'</span>,</span><br><span class="line">          children: [&#123;</span><br><span class="line">            label: <span class="string">'二级 3-1'</span>,</span><br><span class="line">            children: [&#123;</span><br><span class="line">              label: <span class="string">'三级 3-1-1'</span></span><br><span class="line">            &#125;]</span><br><span class="line">          &#125;, &#123;</span><br><span class="line">            label: <span class="string">'二级 3-2'</span>,</span><br><span class="line">            children: [&#123;</span><br><span class="line">              label: <span class="string">'三级 3-2-1'</span></span><br><span class="line">            &#125;]</span><br><span class="line">          &#125;]</span><br><span class="line">        &#125;],</span><br><span class="line">        value2: <span class="string">""</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">      dataChange(val) &#123;</span><br><span class="line">        this.value2 = val</span><br><span class="line">      &#125;,</span><br><span class="line">      clickTree(data) &#123;</span><br><span class="line">        console.log(data);</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    components: &#123;</span><br><span class="line">      selectorTree</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Add <span class="string">"scoped"</span> attribute to <span class="built_in">limit</span> CSS to this component only --&gt;</span><br><span class="line">&lt;style scoped&gt;</span><br><span class="line">  .main &#123;</span><br><span class="line">    height: 100%;</span><br><span class="line">    padding: 100px;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
 <p>组件实现<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div class=<span class="string">"select-tree-box"</span>&gt;</span><br><span class="line">    &lt;el-select :popper-append-to-body=<span class="string">"false"</span> ref=<span class="string">"selectTree"</span> @visible-change=<span class="string">"showSeletrTree"</span></span><br><span class="line">               :filter-method=<span class="string">"filterMethod"</span></span><br><span class="line">               popper-class=<span class="string">"selectTree"</span> v-model=<span class="string">"value"</span> :value=<span class="string">"filterVal"</span> filterable <span class="built_in">disable</span> clearable placeholder=<span class="string">"请选择"</span>&gt;</span><br><span class="line">    &lt;/el-select&gt;</span><br><span class="line">    &lt;div class=<span class="string">"select-tree"</span> v-show=<span class="string">"seletrTree"</span>&gt;</span><br><span class="line">      &lt;vue-scroll class=<span class="string">"tree-scroll"</span>&gt;</span><br><span class="line">        &lt;!--draggable 拖拽--&gt;</span><br><span class="line">        &lt;el-tree</span><br><span class="line">          class=<span class="string">"filter-tree"</span></span><br><span class="line">          :data=<span class="string">"treeList"</span></span><br><span class="line">          :props=<span class="string">"defaultProps"</span></span><br><span class="line">          @node-click=<span class="string">"clickTree"</span></span><br><span class="line">          highlight-current</span><br><span class="line">          default-expand-all</span><br><span class="line">          check-on-click-node</span><br><span class="line">          :expand-on-click-node=<span class="string">"false"</span></span><br><span class="line">          :filter-node-method=<span class="string">"filterNode"</span></span><br><span class="line">          ref=<span class="string">"treeSele"</span>&gt;</span><br><span class="line">        &lt;/el-tree&gt;</span><br><span class="line">      &lt;/vue-scroll&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line"><span class="built_in">export</span> default &#123;</span><br><span class="line">  name: <span class="string">'SelectTree'</span>,</span><br><span class="line">  props: &#123;</span><br><span class="line">    res: &#123;&#125;,</span><br><span class="line">    treeList: &#123;&#125;,</span><br><span class="line">    defaultProps: &#123;</span><br><span class="line">      default: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">        <span class="built_in">return</span> &#123;</span><br><span class="line">          children: <span class="string">'children'</span>,</span><br><span class="line">          label: <span class="string">'label'</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function"><span class="title">data</span></span> () &#123;</span><br><span class="line">    <span class="built_in">return</span> &#123;</span><br><span class="line">      value: this.res,</span><br><span class="line">      seletrTree: <span class="literal">false</span>,</span><br><span class="line">      filterVal: <span class="string">''</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    filterMethod (val) &#123;</span><br><span class="line">      this.<span class="variable">$refs</span>.treeSele.filter(val)</span><br><span class="line">    &#125;,</span><br><span class="line">    filterNode (value, data) &#123;</span><br><span class="line">      <span class="keyword">if</span> (!value) <span class="built_in">return</span> <span class="literal">true</span></span><br><span class="line">      <span class="built_in">return</span> data[this.defaultProps.label].indexOf(value) !== -1</span><br><span class="line">    &#125;,</span><br><span class="line">    SelectMethods (methods) &#123;</span><br><span class="line">      this.<span class="variable">$refs</span>.selectTree[methods]()</span><br><span class="line">    &#125;,</span><br><span class="line">    treeMethods (methods) &#123;</span><br><span class="line">      this.<span class="variable">$refs</span>.treeSele[methods]()</span><br><span class="line">    &#125;,</span><br><span class="line">    showSeletrTree (flag) &#123;</span><br><span class="line">      this.<span class="variable">$refs</span>.selectTree.<span class="variable">$el</span>.querySelector(<span class="string">'.el-select-dropdown'</span>).appendChild(this.<span class="variable">$refs</span>.treeSele.<span class="variable">$el</span>)</span><br><span class="line">      this.seletrTree = flag</span><br><span class="line">    &#125;,</span><br><span class="line">    clickTree (data) &#123;</span><br><span class="line">      this.value = data[this.defaultProps.label]</span><br><span class="line">      this.<span class="variable">$emit</span>(<span class="string">'change'</span>, data)</span><br><span class="line">      this.<span class="variable">$refs</span>.selectTree.blur()</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  watch: &#123;</span><br><span class="line">    filterVal (val) &#123;</span><br><span class="line">      console.log(val)</span><br><span class="line">    &#125;,</span><br><span class="line">    res (val) &#123;</span><br><span class="line">      this.value = val</span><br><span class="line">    &#125;,</span><br><span class="line">    value (val) &#123;</span><br><span class="line">      this.<span class="variable">$emit</span>(<span class="string">'dataChangee'</span>, val)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">  .select-tree-box&#123;</span><br><span class="line">    position: relative;</span><br><span class="line">  &#125;</span><br><span class="line">  .select-tree-box .selectTree .el-scrollbar, .selectTree .el-select-dropdown__empty &#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">  .tree-scroll &#123;</span><br><span class="line">    flex: 1;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
 
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/04/08/selector-tree/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-        
       
     </div>
     <footer class="post-footer">
       
 
       
-
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-date">
-			<div class="post-month">04月</div>
-			<div class="post-day">04</div>
-	</div>
-  
-
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/04/newpapername/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/DIYgod.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/04/newpapername/" itemprop="url">newpapername</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-04T14:09:43+08:00">2019-04-04</time>
+              <a href="/2019/04/04/newpapername/" rel="next" title="newpapername">
+                <i class="fa fa-chevron-left"></i> newpapername
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">•</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article</span>
-                
-                <span title="Words count in article"></span>
-              
-
-              
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/04/04/newpapername/" class="leancloud_visitors" data-flag-title="newpapername">
-               <span class="post-meta-divider">•</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>1233333333333<br>21321321<br>321<br>321<br>321<br>312312</p>
-<p>12321<br>3<br>21321<br>321<br>3<br>12321<br>321</p>
-<p>312<br>3<br>21321321<br>321<br>3<br>123<br>21321<br>3213<br>12<br>321321</p>
-
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/04/04/newpapername/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-        
-      
-    </div>
-    <footer class="post-footer">
-      
-
-      
-
       
     </footer>
   </div>
@@ -585,160 +451,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-date">
-			<div class="post-month">04月</div>
-			<div class="post-day">04</div>
-	</div>
-  
-
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/04/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/DIYgod.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/04/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-04T11:13:24+08:00">2019-04-04</time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">•</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article</span>
-                
-                <span title="Words count in article"></span>
-              
-
-              
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/04/04/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-               <span class="post-meta-divider">•</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/04/04/hello-world/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-        
+    <div class="post-spread">
       
     </div>
-    <footer class="post-footer">
-      
-
-      
-
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -749,8 +466,24 @@
 
 
 
+
+
   
 
+    
+      <script type="text/javascript">
+        window.DISQUS = null;
+        new DisqusJS({
+          shortname: 'diygod-me',
+          siteName: 'Hexo',
+          identifier: '2019/04/08/selector-tree/',
+          url: 'http://yoursite.com/2019/04/08/selector-tree/',
+          api: 'https://disqus.diygod.me/api/',
+          apikey: 'h403RnxQYBk2VylgLZwxodAtYOEL9bzgfhpcc8AZEU0EXn9cEWUoTwrgL3VB5tvj',
+          admin: 'DIYgod',
+          adminLabel: '服务生',
+        });
+      </script>
     
 
   
