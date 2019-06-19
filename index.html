@@ -311,6 +311,153 @@
   
   
   <div class="post-date">
+			<div class="post-month">06月</div>
+			<div class="post-day">19</div>
+	</div>
+  
+
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/19/chrome41-input-bug/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/DIYgod.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/06/19/chrome41-input-bug/" itemprop="url">chrome41-input-bug</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-19T14:43:33+08:00">2019-06-19</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">•</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article"></span>
+              
+
+              
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/06/19/chrome41-input-bug/" class="leancloud_visitors" data-flag-title="chrome41-input-bug">
+               <span class="post-meta-divider">•</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>chrome41版本浏览器，vue双向绑定数据的input输入框有@input事件，输入汉字会出现拼音 例：“中” ==》 “zhong中”
+        element-ui组件也会有此问题
+
+解决办法：不在使用@input事件 使用change事件，需要全局webpack版本 ^4.30.0, vue -V ^3.6.3, webpack-cli -v ^3.3.1,  node -v ^10.13.0, npm -v ^6.4.1(没研究具体哪个依赖影响的)。
+        ps: 还有同事用了win7系统 node -v ^10.13.0, npm -v ^6.4.1 发现没有这个问题，就算有@input事件都不影响 （不明白其中原因）
+</code></pre><p><code>`</code></p>
+
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/06/19/chrome41-input-bug/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+        
+      
+    </div>
+    <footer class="post-footer">
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-date">
 			<div class="post-month">04月</div>
 			<div class="post-day">08</div>
 	</div>
